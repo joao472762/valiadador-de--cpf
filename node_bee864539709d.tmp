@@ -1,0 +1,52 @@
+let cpf = [1,2,3,4,5,6,7,8,9,0,9]
+
+function validCpf(cpf = []){
+    let position = 0
+    let count = 10 
+    do{
+        cpf.push(cpf[position] * count--)
+
+    }while(position < 9)
+    return cpf
+}
+cpf = validCpf()
+console.log(cpf)
+// let count = 0
+
+// do {
+//     cpf.push(cpf[count]* cpfMulti[count])
+//     count ++
+// } while (count < 9);
+
+
+// cpf = cpf.splice(9)
+// total = cpf.reduce((total,number)=> total+ number,0)
+
+// let restCpf = (total * 10) % 11
+
+
+// count = 11
+// let position = 0
+// do{
+    
+//     cpfWithFirtDigit.push(cpfWithFirtDigit[position] * count--)
+//     position ++
+// }while(position <10)
+
+// cpfWithFirtDigit = cpfWithFirtDigit.splice(10)
+// console.log(cpfWithFirtDigit)
+
+// total = cpfWithFirtDigit.reduce((total,number)=> total + number,0)
+
+// console.log(total)
+
+
+
+
+
+
+
+
+
+
+
